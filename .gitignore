@@ -1,0 +1,10 @@
+/Intermediate
+/Saved
+/Binaries
+/Build
+/Build/*
+/VenoM.sdf
+/VenoM.opensdf
+/VenoM.sln
+/VenoM.*.suo
+*.lnk
