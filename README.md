@@ -32,6 +32,8 @@ On the right: Thresholded camera feed;
 ####Android App
 Every player used an Android device as their controller for the game.
 
+![android-app](https://cloud.githubusercontent.com/assets/9435724/10560154/10ea1684-74fa-11e5-8729-a14bd70715cc.png)
+
 From the app, the players can:
 - select the type of towers that they want to build;
 - send creeps to attack to opponent;
