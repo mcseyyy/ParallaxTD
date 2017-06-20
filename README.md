@@ -1,5 +1,5 @@
-#ParallaxTD
-####Bringing phisicality to Tower Defence
+# ParallaxTD
+#### Bringing phisicality to Tower Defence
 ![game-screenshot](https://cloud.githubusercontent.com/assets/9435724/10560156/10ec42d8-74fa-11e5-8abb-50ed98a7244b.png)
 
 [![yt-video](https://cloud.githubusercontent.com/assets/9435724/10560153/10e9000a-74fa-11e5-88ad-d9304e33e07f.png)](https://www.youtube.com/watch?v=oYYZJd8W8i8)
@@ -14,7 +14,7 @@ The nature of the gameplay is fast, competitive, and tactical. Players must focu
 
 PS: The repo does not contain the Android App and the tile detection system.
 
-####Tools
+#### Tools
 
 - The core of the game was developed using **Unreal Engine** with C++, though some of the basic functionalities were implemented using Blueprins.
 - The tile detection system was developed with **OpenCV** and C++.
@@ -22,14 +22,14 @@ PS: The repo does not contain the Android App and the tile detection system.
 - Networking was done using socket libraries.
 - Since Unreal Engine did not support synchronised audio playback, this was done using **irrKlang**.
 
-##Features
-####Tile Detection
+## Features
+#### Tile Detection
 The tile detection system is very reliable and works perfectly(i.e. no false positives and negatives) in various lighting conditions. It also includes a perspective transform so that only the projected screen is used for detection instead of the whole frames recorded by the camera. The program is also able to find the projected screen in the initial frames and therefore the perspective transform is calibrated automatically before every round of the game.
 
 ![tile-detection](https://cloud.githubusercontent.com/assets/9435724/10560157/10f08f6e-74fa-11e5-89d4-cc68bb1ad49e.png)
 On the left: Camera feed with the recognised tiles;<br>
 On the right: Thresholded camera feed;
-####Android App
+#### Android App
 Every player used an Android device as their controller for the game.
 
 ![android-app](https://cloud.githubusercontent.com/assets/9435724/10560154/10ea1684-74fa-11e5-8729-a14bd70715cc.png)
@@ -40,13 +40,13 @@ From the app, the players can:
 - get information about their stats (money, health)
 - be informed when their base is attacked through haptick feedback
 
-####Procedurally arranced music
+#### Procedurally arranced music
 The background music was created by adding/removing audio layers to a base melodic line. Each team hears a slightly different background music which is dependent to the HP of their team.
 
 In the following image, each column corresponds to a HP interval of a team; e.g.: if a team's HP was between 0-11% they would hear only the audio layers from the last column
 ![audio](https://cloud.githubusercontent.com/assets/9435724/10560155/10ea6ecc-74fa-11e5-80c1-d0d846567723.png)
 
-##Contributors
+## Contributors
 The developing team was formed by:
 
 - Andrei Ilisei
@@ -56,7 +56,7 @@ The developing team was formed by:
 - Shayan Chaudhary
 - Stephen Livermore-Tozer
 
-##How to run the game
+## How to run the game
 Due to the nature of the setup (projection on the floor, camera attached to the ceiling etc.) the game cannot be actually played properly. You can use the executables in the /Fake Clients directory to simulate the players and the camera feed and you also need Unreal Engine installed on the machine.
 
 Note: Most of the code actually written by us is in \Source folder. The Blueprint classes (with the attached models) can be found in /Content/Bluebrints/.
